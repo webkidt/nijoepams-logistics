@@ -1,11 +1,16 @@
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, Grid } from '@mui/material';
 import Header from './components/Header';
 import theme from './theme/theme';
 
 function App() {
   return (
     <ThemeProvider theme={theme}>
-      <Header />
+      <Grid container>
+        <Grid item xs={12}>
+          <Header />
+        </Grid>
+        <Grid item xs={12}></Grid>
+      </Grid>
     </ThemeProvider>
   );
 }
