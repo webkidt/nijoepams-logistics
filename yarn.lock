@@ -1343,6 +1343,16 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fontsource/karla@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/karla/-/karla-4.5.0.tgz#f38e39e698a3efd60db46513fafbd3996aeae3fc"
+  integrity sha512-ULtbpNQ8Dw4kcdwG6bPkp9HMBFVsHbdNRzYaCE5vWfZPcSj1r0eIFW/cpUPqnpmspZpTCtltPAwaXkpA5/q4sQ==
+
+"@fontsource/spectral@^4.5.0":
+  version "4.5.0"
+  resolved "https://registry.yarnpkg.com/@fontsource/spectral/-/spectral-4.5.0.tgz#7dc846cb7debd17a8400cc4802a96c35fb18ee5e"
+  integrity sha512-YCZy0hn4QGmi9nxQ26kWWlX1ZQy2YEhUUvsHFBUQEVV7YdbcdG1kPWw00SQUfL6lMHaQxrnXlEICCPhMVqQzzw==
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"

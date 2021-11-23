@@ -1,4 +1,4 @@
-import { ThemeProvider, Grid } from '@mui/material';
+import { ThemeProvider, Grid, Typography } from '@mui/material';
 import Header from './components/Header';
 import theme from './theme/theme';
 
@@ -9,7 +9,13 @@ function App() {
         <Grid item xs={12}>
           <Header />
         </Grid>
-        <Grid item xs={12}></Grid>
+        <Grid item xs={12}>
+          <Typography>Hello</Typography>
+          <Typography>Hello</Typography>
+          <Typography>Hello</Typography>
+          <Typography>Hello</Typography>
+          <Typography>Hello</Typography>
+        </Grid>
       </Grid>
     </ThemeProvider>
   );
