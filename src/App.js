@@ -1,5 +1,5 @@
 import { ThemeProvider, Grid, Typography } from '@mui/material';
-import Header from './components/Header';
+import Header from './components/Header/Header';
 import theme from './theme/theme';
 
 function App() {

@@ -1,11 +1,14 @@
 import { createTheme } from '@mui/material/styles';
-import { pink } from '@mui/material/colors';
+import { pink, indigo } from '@mui/material/colors';
 import '@fontsource/spectral/300.css';
 import '@fontsource/spectral/700.css';
 import '@fontsource/karla';
 
 let theme = createTheme({
   palette: {
+    primary: {
+      main: indigo[500],
+    },
     secondary: {
       main: pink[500],
     }

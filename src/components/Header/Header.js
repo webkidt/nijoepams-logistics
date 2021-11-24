@@ -8,10 +8,11 @@ import {
   Stack,
 } from '@mui/material';
 import { makeStyles } from '@mui/styles';
+import ElevateOnScroll from './ElevateOnScroll';
 // import {withStyles} from '@mui/material/styles';
 // import { bgcolor } from '@mui/system';
 // import Image from 'mui-image';
-import bigTitleImage from '../assets/w1.jpg';
+import bigTitleImage from '../../assets/w1.jpg';
 
 const useStyles = makeStyles({
   root: {
@@ -32,32 +33,34 @@ const useStyles = makeStyles({
   },
 });
 
-const Header = () => {
+const Header = (props) => {
   const classes = useStyles();
   return (
     <Box className={classes.root}>
-      <AppBar position='static' color='transparent' elevation={0}>
-        <Container>
-          <Toolbar>
-            <Typography
-              variant='h6'
-              component='div'
-              sx={{ flexGrow: 1, color: 'common.white' }}
-            >
-              NIJOEPAMS
-            </Typography>
-            <Button href='#' sx={{ color: 'common.white' }}>
-              Home
-            </Button>
-            <Button href='#' sx={{ color: 'common.white' }}>
-              Services
-            </Button>
-            <Button href='#' sx={{ color: 'common.white' }}>
-              Contact
-            </Button>
-          </Toolbar>
-        </Container>
-      </AppBar>
+      <ElevateOnScroll {...props}>
+        <AppBar>
+          <Container>
+            <Toolbar>
+              <Typography
+                variant='h6'
+                component='div'
+                sx={{ flexGrow: 1, color: 'common.white' }}
+              >
+                NIJOEPAMS
+              </Typography>
+              <Button href='#' sx={{ color: 'common.white' }}>
+                Home
+              </Button>
+              <Button href='#' sx={{ color: 'common.white' }}>
+                Services
+              </Button>
+              <Button href='#' sx={{ color: 'common.white' }}>
+                Contact
+              </Button>
+            </Toolbar>
+          </Container>
+        </AppBar>
+      </ElevateOnScroll>
       <Container fixed sx={{ padding: '100px 0' }}>
         <Box
           sx={{
