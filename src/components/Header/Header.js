@@ -19,7 +19,7 @@ import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ElevateOnScroll from './ElevateOnScroll';
-import bigTitleImage from '../../assets/w1.jpg';
+import bigTitleImage from '../../assets/a9.jpg';
 
 const styles = {
   root: {

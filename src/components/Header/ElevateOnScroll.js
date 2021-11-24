@@ -13,7 +13,7 @@ const ElevateOnScroll = props => {
   return React.cloneElement(children, {
     elevation: trigger ? 4 : 0,
     color: trigger ? 'primary' : 'transparent',
-    position: trigger ? 'sticky' : 'static',
+    position: trigger ? 'fixed' : 'static',
   });
 };
 
