@@ -1,5 +1,6 @@
-import { ThemeProvider, Grid, useMediaQuery } from '@mui/material';
+import { ThemeProvider, Grid, useMediaQuery, Container } from '@mui/material';
 import Header from './components/Header/Header';
+import Main from './components/Main/Main';
 import theme from './theme/theme';
 import backgroundImage from './assets/w2.jpg';
 
@@ -11,13 +12,16 @@ function App() {
           <Header />
         </Grid>
         {useMediaQuery(theme.breakpoints.down('sm')) ? (
-          <Grid item xs={12}></Grid>
+          <Grid item xs={12}>
+            <Main></Main>
+          </Grid>
         ) : (
           <Grid
             item
             container
             sx={{
               minHeight: '100vh',
+              minWidth: '100vw',
               flexGrow: 1,
               backgroundImage: `url(${backgroundImage})`,
               backgroundRepeat: 'no-repeat',
@@ -25,7 +29,12 @@ function App() {
               backgroundAttachment: 'fixed',
               backgroundSize: 'cover',
             }}
-          ></Grid>
+          >
+            {/* <Container fixed>
+              <Main></Main>
+            </Container> */}
+            <Main></Main>
+          </Grid>
         )}
       </Grid>
     </ThemeProvider>
