@@ -13,35 +13,26 @@ import {
   MenuItem,
   ListItemIcon,
 } from '@mui/material';
-import { withStyles, useTheme } from '@mui/styles';
+import { useTheme } from '@mui/styles';
 import MenuIcon from '@mui/icons-material/Menu';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
 import ElevateOnScroll from './ElevateOnScroll';
 import bigTitleImage from '../../assets/a9.jpg';
+import { styled } from '@mui/system';
 
-const styles = {
-  root: {
-    flexGrow: 1,
-    minHeight: '100vh',
-    backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(${bigTitleImage})`,
-    backgroundRepeat: 'no-repeat',
-    backgroundPosition: 'center',
-    backgroundSize: 'cover',
-    backgroundAttachment: 'fixed',
-  },
-  bigTitleContainer: {
-    backgroundColor: 'transparent',
-    textAlign: 'center',
-  },
-  bigTitle: {
-    color: '#ffffff',
-  },
-};
+const HeaderWrapper = styled(Box)({
+  minHeight: '100vh',
+  backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5)), url(${bigTitleImage})`,
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundAttachment: 'fixed',
+});
 
 const Header = props => {
-  const { classes } = props;
+  // const { classes } = props;
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const theme = useTheme();
@@ -56,7 +47,7 @@ const Header = props => {
   };
 
   return (
-    <Box className={classes.root}>
+    <HeaderWrapper>
       <ElevateOnScroll {...props}>
         <AppBar>
           <Container>
@@ -83,7 +74,7 @@ const Header = props => {
                     anchorEl={anchorEl}
                     anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
                     keepMounted
-                    transformOrigin={{vertical: 'top', horizontal: 'right'}}
+                    transformOrigin={{ vertical: 'top', horizontal: 'right' }}
                     open={open}
                     onClose={handleClose}
                   >
@@ -157,39 +148,9 @@ const Header = props => {
             </Box>
           </Stack>
         </Box>
-        {/* <Box sx={{display: 'flex', alignItems: 'center', justifyContent: 'center',}}>
-          <Stack sx={{color: 'common.white'}}>
-            <Typography
-              align='center'
-              variant='h1'
-              gutterBottom
-            >
-              Logistics For Businesses Of All Types
-            </Typography>
-            <Typography variant='h6' gutterBottom>
-              Your Swift, Efficient and Reliable Logistics Partner
-            </Typography>
-            <Button>Contact Us</Button>
-          </Stack>
-        </Box> */}
-        {/* <Stack mt={5} spacing={2}>
-          <Box className={classes.bigTitleContainer}>
-            <Stack spacing={2}>
-              <Typography align='center' variant='h1' className={classes.bigTitle} gutterBottom>
-                Logistics For Businesses Of All Types
-              </Typography>
-              <Typography variant='h6' color='common.white' gutterBottom>
-                Your Swift, Efficient and Reliable Logistics Partner
-              </Typography>
-            </Stack>
-          </Box>
-          <Box>
-            <Button>Contact Us</Button>
-          </Box>
-        </Stack> */}
       </Container>
-    </Box>
+    </HeaderWrapper>
   );
 };
 
-export default withStyles(styles)(Header);
+export default Header;

@@ -11,7 +11,7 @@ let theme = createTheme({
     },
     secondary: {
       main: pink[500],
-    }
+    },
   },
   typography: {
     fontFamily: '"Karla", "Roboto", "Helvetica", sans-serif',
