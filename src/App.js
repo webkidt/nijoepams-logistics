@@ -1,6 +1,6 @@
 import { ThemeProvider, Box } from '@mui/material';
 import Header from './components/Header/Header';
-import SectionsContainer from './components/containers/SectionsContainer';
+import Sections from './components/containers/Sections';
 import theme from './theme/theme';
 import backgroundImage from './assets/w2.jpg';
 
@@ -17,7 +17,7 @@ function App() {
         }}
       >
         <Header />
-        <SectionsContainer />
+        <Sections />
       </Box>
     </ThemeProvider>
   );

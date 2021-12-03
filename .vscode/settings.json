@@ -7,5 +7,6 @@
     "**/components/**/*.js": "javascriptreact",
     "**/containers/**/*.js": "javascriptreact",
     "**/hoc/**/*.js": "javascriptreact"
-  }
+  },
+  "cSpell.words": ["appbar", "fontsource", "NIJOEPAMS"]
 }

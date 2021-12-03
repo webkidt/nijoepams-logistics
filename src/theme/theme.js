@@ -12,6 +12,7 @@ let theme = createTheme({
     secondary: {
       main: pink[500],
     },
+    subGrey: '#999999',
   },
   typography: {
     fontFamily: '"Karla", "Roboto", "Helvetica", sans-serif',
@@ -29,6 +30,24 @@ let theme = createTheme({
       fontSize: '1.3rem',
       lineHeight: 1.618,
     },
+    featureTitle: {
+      fontFamily: '"Spectral", "Roboto", "Helvetica", sans-serif',
+      fontWeight: 700,
+      fontSize: '2.5rem',
+      lineHeight: 1.618,
+    },
+    description: {
+      fontFamily: '"Spectral", "Roboto", "Helvetica", sans-serif',
+      fontWeight: 300,
+      fontSize: '1.25rem',
+      lineHeight: 1.5,
+    },
+    feature: {
+      fontFamily: '"Spectral", "Roboto", "Helvetica", sans-serif',
+      fontWeight: 700,
+      fontSize: '19px',
+      lineHeight: 1.618,
+    },
   },
 });
 
@@ -39,6 +58,12 @@ theme = createTheme(theme, {
         fontSize: '3rem',
       },
     },
+    featureTitle: {
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '24px',
+      },
+    },
+    description: {},
   },
 });
 
