@@ -8,5 +8,13 @@
     "**/containers/**/*.js": "javascriptreact",
     "**/hoc/**/*.js": "javascriptreact"
   },
-  "cSpell.words": ["appbar", "fontsource", "NIJOEPAMS"]
+  "cSpell.words": [
+    "appbar",
+    "Balewa",
+    "Faruk",
+    "fontsource",
+    "Ndagi",
+    "NIJOEPAMS",
+    "Tafawa"
+  ]
 }

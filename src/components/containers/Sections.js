@@ -1,10 +1,11 @@
-import { Paper } from '@mui/material';
+import { Box } from '@mui/material';
 import Features from '../Sections/Features';
+import ContactUs from '../Sections/ContactUs';
 
 const Sections = props => {
   return (
-    <Paper
-      elevation={3}
+    <Box
+      // elevation={0}
       sx={{
         mx: { xs: 0, sm: 2 },
         mt: { xs: 0, sm: -6 },
@@ -13,7 +14,8 @@ const Sections = props => {
       }}
     >
       <Features />
-    </Paper>
+      <ContactUs />
+    </Box>
   );
 };
 

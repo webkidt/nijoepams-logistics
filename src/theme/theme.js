@@ -13,6 +13,7 @@ let theme = createTheme({
       main: pink[500],
     },
     subGrey: '#999999',
+    lighterGrey: '#cccccc',
   },
   typography: {
     fontFamily: '"Karla", "Roboto", "Helvetica", sans-serif',
@@ -39,7 +40,7 @@ let theme = createTheme({
     description: {
       fontFamily: '"Spectral", "Roboto", "Helvetica", sans-serif',
       fontWeight: 300,
-      fontSize: '1.25rem',
+      fontSize: '19px',
       lineHeight: 1.5,
     },
     feature: {
