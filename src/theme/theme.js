@@ -49,6 +49,11 @@ let theme = createTheme({
       fontSize: '19px',
       lineHeight: 1.618,
     },
+    contactTitle: {
+      fontFamily: '"Spectral", "Roboto", "Helvetica", sans-serif',
+      fontWeight: 700,
+      lineHeight: 1.4,
+    },
   },
 });
 

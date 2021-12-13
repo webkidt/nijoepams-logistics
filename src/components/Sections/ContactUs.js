@@ -1,4 +1,12 @@
-import { Box, Container, Grid, Typography } from '@mui/material';
+import {
+  Box,
+  Card,
+  CardContent,
+  CardHeader,
+  Container,
+  Grid,
+  Typography,
+} from '@mui/material';
 import AddLocation from '@mui/icons-material/AddLocation';
 import PhoneIcon from '@mui/icons-material/Phone';
 import BackgroundImage from '../../assets/w3.jpg';
@@ -53,9 +61,9 @@ const ContactUs = () => {
         pb: 9,
       }}
     >
-      <Container fixed sx={{ px: 2 }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={5}>
+      <Container fixed sx={{ px: 2, position: 'relative', zIndex: 'modal' }}>
+        <Grid container justifyContent='space-between' rowGap={10}>
+          <Grid item xs={12} md={5} px={1}>
             <Typography color='white' component='p' variant='featureTitle' sx={{ my: 2 }}>
               Get in Touch
             </Typography>
@@ -73,7 +81,48 @@ const ContactUs = () => {
               info={phoneInfo}
             />
           </Grid>
-          <Grid item xs={12} md={5}></Grid>
+          <Grid item xs={12} md={5} px={1} sx={{ position: 'relative' }}>
+            {/* <Card sx={{ width: '100%', height: 100, px: 1, pt: 1, overflow: 'visible' }}>
+              <Box sx={{ width: '50%', height: 50, bgcolor: '#ccc', mt: -2 }}></Box>
+            </Card> */}
+            <Card
+              raised
+              sx={{
+                maxWidth: '100%',
+                width: '100%',
+                my: 3,
+                pt: 2,
+                overflow: 'visible',
+                borderRadius: 2,
+              }}
+            >
+              <CardHeader
+                // component='div'
+                sx={{
+                  textAlign: 'center',
+                  bgcolor: 'secondary.main',
+                  px: 1,
+                  py: 2,
+                  mb: 2,
+                  mx: 2,
+                  mt: -4,
+                  borderRadius: 1,
+                  boxShadow: 10,
+                }}
+                title={
+                  <Typography
+                    component='h4'
+                    color='white'
+                    variant='contactTitle'
+                    sx={{ fontSize: '19px', my: 1 }}
+                  >
+                    Contact Us
+                  </Typography>
+                }
+              />
+              <CardContent></CardContent>
+            </Card>
+          </Grid>
         </Grid>
       </Container>
     </Box>
