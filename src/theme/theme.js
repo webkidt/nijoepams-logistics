@@ -5,6 +5,16 @@ import '@fontsource/spectral/700.css';
 import '@fontsource/karla';
 
 let theme = createTheme({
+  breakpoints: {
+    values: {
+      xs: 0,
+      sm: 576,
+      md: 768,
+      lg: 992,
+      xl: 1200,
+      xxl: 1400,
+    },
+  },
   palette: {
     primary: {
       main: indigo[500],
@@ -12,6 +22,8 @@ let theme = createTheme({
     secondary: {
       main: pink[500],
     },
+    inputGrey: '#d2d2d2',
+    labelGrey: '#9e9e9e',
     subGrey: '#999999',
     lighterGrey: '#cccccc',
   },
