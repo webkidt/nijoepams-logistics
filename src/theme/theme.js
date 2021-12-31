@@ -22,6 +22,9 @@ let theme = createTheme({
     secondary: {
       main: pink[500],
     },
+    footerBackground: {
+      main: '#323437',
+    },
     inputGrey: '#d2d2d2',
     labelGrey: '#9e9e9e',
     subGrey: '#999999',
@@ -65,6 +68,12 @@ let theme = createTheme({
       fontFamily: '"Spectral", "Roboto", "Helvetica", sans-serif',
       fontWeight: 700,
       lineHeight: 1.4,
+    },
+    footer: {
+      fontFamily: '"Karla", "Roboto", "Helvetica", sans-serif',
+      fontSize: '14px',
+      fontWeight: 300,
+      lineHeight: 1.618,
     },
   },
 });

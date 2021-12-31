@@ -1,6 +1,7 @@
 import { Box } from '@mui/material';
 import Features from '../Sections/Features';
 import ContactUs from '../Sections/ContactUs';
+import Footer from '../Sections/Footer';
 
 const Sections = props => {
   return (
@@ -15,6 +16,7 @@ const Sections = props => {
     >
       <Features />
       <ContactUs />
+      <Footer />
     </Box>
   );
 };

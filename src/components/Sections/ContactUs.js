@@ -61,6 +61,7 @@ const ContactInfo = ({ icon, title, info }) => {
 // }));
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
+  paddingBottom: theme.spacing(),
   '& .MuiInput-root:before': {
     borderColor: theme.palette.inputGrey,
   },

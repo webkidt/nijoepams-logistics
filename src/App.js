@@ -3,6 +3,7 @@ import Header from './components/Header/Header';
 import Sections from './components/containers/Sections';
 import theme from './theme/theme';
 import backgroundImage from './assets/w2.jpg';
+// import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       >
         <Header />
         <Sections />
+        {/* <Footer /> */}
       </Box>
     </ThemeProvider>
   );
