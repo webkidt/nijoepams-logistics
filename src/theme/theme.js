@@ -37,7 +37,6 @@ let theme = createTheme({
       fontWeight: 700,
       fontSize: '5rem',
       lineHeight: 1.4,
-      // letterSpacing: '-0.01562em',
       color: 'white',
     },
     subTitle: {

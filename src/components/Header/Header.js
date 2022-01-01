@@ -18,9 +18,10 @@ import MenuIcon from '@mui/icons-material/Menu';
 import MiscellaneousServicesIcon from '@mui/icons-material/MiscellaneousServices';
 import HomeIcon from '@mui/icons-material/Home';
 import PhoneIcon from '@mui/icons-material/Phone';
+import { styled } from '@mui/system';
 import ElevateOnScroll from './ElevateOnScroll';
 import bigTitleImage from '../../assets/a9.jpg';
-import { styled } from '@mui/system';
+import logo from '../../assets/icon3.png';
 
 const HeaderWrapper = styled(Box)({
   minHeight: '100vh',
@@ -32,7 +33,6 @@ const HeaderWrapper = styled(Box)({
 });
 
 const Header = props => {
-  // const { classes } = props;
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const theme = useTheme();
@@ -52,6 +52,7 @@ const Header = props => {
         <AppBar>
           <Container>
             <Toolbar>
+              <Box component='img' alt='logo' src={logo} mr={1}></Box>
               <Typography
                 variant='h6'
                 component='div'

@@ -19,7 +19,6 @@ function App() {
       >
         <Header />
         <Sections />
-        {/* <Footer /> */}
       </Box>
     </ThemeProvider>
   );

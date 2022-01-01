@@ -6,7 +6,6 @@ import Footer from '../Sections/Footer';
 const Sections = props => {
   return (
     <Box
-      // elevation={0}
       sx={{
         mx: { xs: 0, sm: 2 },
         mt: { xs: 0, sm: -6 },

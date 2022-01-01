@@ -54,12 +54,6 @@ const ContactInfo = ({ icon, title, info }) => {
   );
 };
 
-// const FormContent = styled(CardContent)(({theme}) => ({
-//   '& .MuiCardContent-root': {
-//     pt: 20,
-//   }
-// }));
-
 const StyledTextField = styled(TextField)(({ theme }) => ({
   paddingBottom: theme.spacing(),
   '& .MuiInput-root:before': {
@@ -114,7 +108,6 @@ const ContactUs = () => {
           zIndex: 2,
         }}
       >
-        {/* <Grid container justifyContent='space-between' rowGap={10}> */}
         <Grid container justifyContent='space-between'>
           <Grid
             item
@@ -146,11 +139,7 @@ const ContactUs = () => {
             px={1}
             sx={{ pt: { xs: '5px', sm: '20px', lg: '0' }, position: 'relative' }}
           >
-            {/* <Card sx={{ width: '100%', height: 100, px: 1, pt: 1, overflow: 'visible' }}>
-              <Box sx={{ width: '50%', height: 50, bgcolor: '#ccc', mt: -2 }}></Box>
-            </Card> */}
             <Card
-              // component='div'
               raised
               sx={{
                 display: 'inline-block',
@@ -163,7 +152,6 @@ const ContactUs = () => {
               }}
             >
               <CardHeader
-                // component='div'
                 sx={{
                   textAlign: 'center',
                   bgcolor: 'secondary.main',
@@ -192,7 +180,6 @@ const ContactUs = () => {
                 }}
               >
                 <Box
-                  // disableGutters
                   sx={{
                     mx: 'auto',
                     width: 'auto',
@@ -217,7 +204,6 @@ const ContactUs = () => {
                       position: 'relative',
                       '& .MuiTextField-root': {
                         m: 1,
-                        // width: '12ch',
                       },
                     }}
                   >
